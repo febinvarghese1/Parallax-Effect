@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Sansita+Swashed&family=Syne+Mono&display=swap');
+
+:root{
+    --primary-font:'Sansita Swashed';
+    --secondary-font:'Syne Mono';
+    --content-font:'Lobster';
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  height: 100vh;
+}
+.background {
+  width: 100%;
+  min-height: 110vh;
+  position: absolute;
+  object-fit: cover;
+  z-index: -1;
+}
+
+nav {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  font-size: 7.5rem;
+  color: red;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  font-family: var(--primary-font);
+}
+.header-title{
+    font-size:3rem;
+    font-family: var(--secondary-font);
+    padding:5px 0px;
+    margin: 10px 20px;
+}
+
+#btn {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 40%;
+  left: 50%;
+  z-index: 2;
+  padding: 20px 40px;
+  border: 1px solid red;
+  margin-top: 40px;
+  text-transform: uppercase;
+  font-size: 2rem;
+  background-color: white;
+  cursor: pointer;
+  transition: all 1s ease-out;
+}
+#btn:hover {
+  background-color: red;
+  color: white;
+  border: 1px solid white;
+  border-radius: 30px;
+}
+
+.content-wrapper {
+  width: 100%;
+  background: black;
+  min-height: 100vh;
+  z-index: 2;
+  color: white;
+  position: absolute;
+}
+
+.content-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: 60vh;
+}
+
+.content-images img {
+  height: 300px;
+  width: 600px;
+  object-fit: cover;
+}
+
+.link-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px auto;
+}
+
+.links li {
+  border-bottom: 2px transparent white;
+  margin: 10px 20px;
+  list-style: none;
+}
+.links li:hover {
+  transition: border 400ms ease;
+  border-bottom: 2px solid white;
+}
+
+.links li a {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+}
